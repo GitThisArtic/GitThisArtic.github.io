@@ -5,69 +5,35 @@
     --primary-fill-color: #1F2937;
     --ink-black:#202020;
     --font-family: Arial, sans-serif;
-    --font-title-size: 100px;
-    --font-header-size: 50px;
-    --font-subheader-size: 30px;
-    --font-body-size: 20px;
-    --font-link-size: 20px;
+    --font-title-size: 10rem;
+    --font-header-size: 5rem;
+    --font-subheader-size: 3rem;
+    --font-body-size: 2rem;
+    --font-link-size: 2rem;
     --font-scaler: 1.2;
     --site-margin: 0rem;
 }
 
 body {
     background-color: var(--primary-color);
-    margin: var(--site-margin);
+    margin: 0em;
     padding: 0em;
-}
-
-/* ----- Navigation Section ----- */
-.navbar {
-    margin-left: 0em;
-    margin-right: 0em;
-    padding: 0.25em;
-    height: 1em;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 2em;
-    margin-right: 2em;
-    gap: 3em;
-}
-
-.nav-links a {
-    color: var(--primary-color);
-    font-family: var(--font-family);
-    font-size: var(--font-link-size);
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    color: var(--tertiary-color);
-    text-decoration: none;
-    transition: 0.3s;
 }
 
 /* ----- Hero Section ----- */
 .hero {
-    background-color: var(--primary-fill-color);
-    width: 100%;
-    height: 100%;
+    background-color: var(--tertiary-color);
+    background-size: cover;
 }
 
 .hero-name {
     color: var(--primary-color);
     font-family: var(--font-family);
     font-size: var(--font-title-size);
-    display: flex;
     justify-content: center;
     text-align: center;
-    margin: var(--site-margin);
-    padding-top: 2em;
+    margin: 0em;
+    padding-top: 10rem;
 }
 
 .hero-subname {
@@ -77,10 +43,42 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 1em;
-    padding-bottom: 8em;
+    margin: 0em;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
 }
 
+/* ----- Navigation Section ----- */
+.navbar {
+    background-color: var(--primary-fill-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    gap: 5em;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-link-size);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
 
 /* ----- Body Section ----- */
 img {
@@ -89,8 +87,8 @@ img {
 }
 
 .section-details {
-    margin: var(--site-margin);
-    padding: 0em;
+    margin: 0em;
+    padding: 1em;
 }
 
 .section-title {
@@ -104,13 +102,28 @@ img {
 }
 
 .section-body {
+    text-align: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0em;
+}
+
+.section-body p {
     color: var(--ink-black);
     font-family: var(--font-family);
     font-size: var(--font-body-size);
-    text-align: center;
+    text-align: left;
     justify-content: center;
-    margin: 2em;
-    padding: 0em;
+}
+
+.section-details iframe {
+    border: 1px solid var(--ink-black);
+    justify-content: center;
+    width: calc(100% - 20%);
+    height: 50rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* ----- Project Section ----- */
@@ -120,48 +133,46 @@ img {
     flex-wrap: wrap;
     min-width: 15rem;
     margin: 1em;
-    gap: 2em;
+    gap: 10em;
 }
 
 .section-project-box {
-    background-color: var(--primary-fill-color);
+    background-color: var(--secondary-color);
     padding: 1em;
-    max-width: 40%;
-    min-width: 15rem;
+    width: 50em;
     height: auto;
 }
 
 .section-project-title {
-    color: var(--primary-color);
+    color: var(--ink-black);
     font-family: var(--font-family);
     font-size: var(--font-body-size);
+    font-weight: bold;
     margin-bottom: 1rem;
     min-width: 15rem;
 }
 
 /* ----- Footer Section----- */
-footer {
+.div-footer {
     background-color: var(--primary-fill-color);
-    padding: 3em;
-    margin: var(--site-margin);
-    gap: 1em;
-    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 35em;
+    padding-right: 35em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-name {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     font-family: var(--font-family);
     font-size: var(--font-body-size);
     font-weight: bold;
-    text-align: left;
-    justify-content: left;
 }
 
 .footer-degree {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     font-family: var(--font-family);
     font-size: var(--font-body-size);
     font-weight: bold;
-    text-align: left;
-    justify-content: left;
 }
