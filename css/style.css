@@ -5,16 +5,17 @@
     --primary-fill-color: #1F2937;
     --ink-black:#202020;
     --font-family: Arial, sans-serif;
-    --font-title: 100px;
-    --font-header: 50px;
-    --font-subheader: 30px;
-    --font-body-large: 20px;
-    --font-body-medium: 15px;
+    --font-title: 124px;
+    --font-header: 64px;
+    --font-subheader: 32px;
+    --font-body-large: 24px;
+    --font-body-medium: 16px;
     --font-scaler: 1.2;
     --site-margin: 0rem;
 }
 
 body {
+    font-family: var(--font-family);
     background-color: var(--primary-color);
     margin: 0rem;
     padding: 0rem;
@@ -22,27 +23,22 @@ body {
 
 /* ----- Hero Section ----- */
 .hero {
+    color: var(--primary-color);
     background-color: var(--tertiary-color);
     background-size: cover;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-name {
-    color: var(--primary-color);
     font-family: var(--font-family);
     font-size: var(--font-title);
-    justify-content: center;
-    text-align: center;
     margin: 0rem;
     padding-top: 1em;
 }
 
 .hero-subname {
-    color: var(--primary-color);
-    font-family: var(--font-family);
     font-size: var(--font-subheader);
-    display: flex;
-    justify-content: center;
-    text-align: center;
     margin: 0rem;
     padding-top: 1em;
     padding-bottom: 2.5em;
@@ -68,7 +64,6 @@ body {
 
 .nav-links a {
     color: var(--primary-color);
-    font-family: var(--font-family);
     font-size: var(--font-body-large);
     text-decoration: none;
     font-weight: bold;
@@ -77,47 +72,31 @@ body {
 .nav-links a:hover {
     color: var(--secondary-color);
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s
 }
 
 /* ----- Body Section ----- */
-img {
-    width: 100%;
-    height: auto;
-}
-
-.section-details {
+.item-details {
+    color: var(--ink-black);
+    font-size: var(--font-body-medium);
     margin: 0rem;
     padding: 2em;
+    place-items: center;
+    text-align: justify;
 }
 
-.section-title {
-    color: var(--ink-black);
-    font-family: var(--font-family);
+.item-title {
     font-size: var(--font-header);
-    text-align: center;
-    justify-content: center;
-    margin: 1rem;
-    padding: 0rem;
 }
 
-.section-body {
-    text-align: center;
-    justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 0em;
+.item-body {
+    max-width: 50rem;
+    min-width: 15rem;
+    line-height: 1.5;
+    gap: 1rem;
 }
 
-.section-body p {
-    color: var(--ink-black);
-    font-family: var(--font-family);
-    font-size: var(--font-body-medium);
-    text-align: left;
-    justify-content: center;
-}
-
-.section-details iframe {
+.item-details iframe {
     border: 1px solid var(--ink-black);
     justify-content: center;
     width: calc(100% - 20%);
@@ -127,22 +106,23 @@ img {
 }
 
 /* ----- Project Section ----- */
-.section-project {
+.item-project {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
-    gap: 10em;
+    max-width: 40rem;
+    min-width: 15rem;
+    gap: 10rem;
 }
 
-.section-project-box {
+.item-project-box {
     background-color: var(--secondary-color);
     padding: 1rem;
-    width: 40vw;
+    width: 50em;
     height: auto;
 }
 
-.section-project-title {
+.item-project-title {
     color: var(--ink-black);
     font-family: var(--font-family);
     font-size: var(--font-body-medium);
@@ -151,7 +131,12 @@ img {
     min-width: 15rem;
 }
 
-/* ----- Footer Section----- */
+.item-project-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* ----- Footer item----- */
 .div-footer {
     background-color: var(--primary-fill-color);
     padding: 2em;
