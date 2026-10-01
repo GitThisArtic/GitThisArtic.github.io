@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #F4F4F5;
+    --secondary-color: #9CA3AF;
+    --tertiary-color:#4B5563;
+    --primary-fill-color: #1F2937;
+    --ink-black:#202020;
+    --font-family: Arial, sans-serif;
+    --font-title-size: 100px;
+    --font-header-size: 50px;
+    --font-subheader-size: 30px;
+    --font-body-size: 20px;
+    --font-link-size: 20px;
+    --font-scaler: 1.2;
+    --site-margin: 0rem;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: var(--site-margin);
+    padding: 0em;
+}
+
+/* ----- Navigation Section ----- */
+.navbar {
+    margin-left: 0em;
+    margin-right: 0em;
+    padding: 0.25em;
+    height: 1em;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-right: 2em;
+    gap: 3em;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-link-size);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* ----- Hero Section ----- */
+.hero {
+    background-color: var(--primary-fill-color);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-name {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-title-size);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: var(--site-margin);
+    padding-top: 2em;
+}
+
+.hero-subname {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-subheader-size);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 8em;
+}
+
+
+/* ----- Body Section ----- */
+img {
+    width: 100%;
+    height: auto;
+}
+
+.section-details {
+    margin: var(--site-margin);
+    padding: 0em;
+}
+
+.section-title {
+    color: var(--ink-black);
+    font-family: var(--font-family);
+    font-size: var(--font-header-size);
+    text-align: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 0em;
+}
+
+.section-body {
+    color: var(--ink-black);
+    font-family: var(--font-family);
+    font-size: var(--font-body-size);
+    text-align: center;
+    justify-content: center;
+    margin: 2em;
+    padding: 0em;
+}
+
+/* ----- Project Section ----- */
+.section-project {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 15rem;
+    margin: 1em;
+    gap: 2em;
+}
+
+.section-project-box {
+    background-color: var(--primary-fill-color);
+    padding: 1em;
+    max-width: 40%;
+    min-width: 15rem;
+    height: auto;
+}
+
+.section-project-title {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-body-size);
+    margin-bottom: 1rem;
+    min-width: 15rem;
+}
+
+/* ----- Footer Section----- */
+footer {
+    background-color: var(--primary-fill-color);
+    padding: 3em;
+    margin: var(--site-margin);
+    gap: 1em;
+    text-align: center;
+}
+
+.footer-name {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-body-size);
+    font-weight: bold;
+    text-align: left;
+    justify-content: left;
+}
+
+.footer-degree {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: var(--font-body-size);
+    font-weight: bold;
+    text-align: left;
+    justify-content: left;
+}
