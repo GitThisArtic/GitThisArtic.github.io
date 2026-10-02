@@ -5,10 +5,11 @@
     --primary-fill-color: #1F2937;
     --ink-black:#202020;
     --font-family: Arial, sans-serif;
-    --font-header: 64px;
-    --font-subheader: 24px;
-    --font-body-large: 16px;
-    --font-body-medium: 16px;
+    --font-header: 4rem;
+    --font-subheader: 1.5rem;
+    --font-section-header: 2.5rem;
+    --font-body-large: 1rem;
+    --font-body-medium: 1rem;
     --font-scaler: 1.2;
     --site-margin: 0rem;
 }
@@ -80,12 +81,13 @@ body {
     font-size: var(--font-body-medium);
     margin: 0rem;
     padding: 2em;
+    justify-content: center;
     place-items: center;
     text-align: justify;
 }
 
 .item-title {
-    font-size: var(--font-header);
+    font-size: var(--font-section-header);
 }
 
 .item-body {
