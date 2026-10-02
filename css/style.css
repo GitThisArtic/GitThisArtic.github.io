@@ -5,10 +5,9 @@
     --primary-fill-color: #1F2937;
     --ink-black:#202020;
     --font-family: Arial, sans-serif;
-    --font-title: 124px;
     --font-header: 64px;
-    --font-subheader: 32px;
-    --font-body-large: 24px;
+    --font-subheader: 24px;
+    --font-body-large: 16px;
     --font-body-medium: 16px;
     --font-scaler: 1.2;
     --site-margin: 0rem;
@@ -32,7 +31,7 @@ body {
 
 .hero-name {
     font-family: var(--font-family);
-    font-size: var(--font-title);
+    font-size: var(--font-header);
     margin: 0rem;
     padding-top: 1em;
 }
