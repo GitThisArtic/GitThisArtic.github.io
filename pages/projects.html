@@ -3,8 +3,10 @@
   
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greyson Ekstrom | Projects</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/project-filter.js?v=4" defer></script>
   </head>
 
   <body>
@@ -27,38 +29,43 @@
     <!-- Projects -->
     <section class="item-details">
       <h3 class="item-title">Projects</h3>
+      <div class="project-filters" role="group" aria-label="Filter projects by type. Select multiple categories.">
+        <button class="project-filter" type="button" data-filter="student-teams" aria-pressed="true">Student Teams</button>
+        <button class="project-filter" type="button" data-filter="personal-projects" aria-pressed="true">Personal Projects</button>
+      </div>
+      <p class="project-empty" role="status" hidden>No projects match the selected categories.</p>
       <div class="item-project">
-        <span class="item-project-box">
+        <span class="item-project-box" data-project-type="personal-projects">
           <div class="item-project-title">4-Axis Robotic Arm</div>
           <div class="item-project-image">
             <img src="../media/personal/robotic_arm/RoboArm.png" class="project-image" >
           </div>
         </span>
-        <span class="item-project-box">
+        <span class="item-project-box" data-project-type="student-teams">
           <div class="item-project-title">2027 IEEE Hardware Competition</div>
           <div class="item-project-image">
             <img src="../media/clubs/robotics/IEEE_logo.png" class="project-image" >
           </div>
         </span>
-        <span class="item-project-box">
+        <span class="item-project-box" data-project-type="student-teams">
           <div class="item-project-title">Voltage Indicator</div>
           <div class="item-project-image">
             <img src="../media/clubs/motorsports/bspd/BSPD_MODEL_BOTTOM.png" class="project-image" >
           </div>
         </span>
-        <span class="item-project-box">
+        <span class="item-project-box" data-project-type="student-teams">
           <div class="item-project-title">Brake System Plausibility Device</div>
           <div class="item-project-image">
             <img src="../media/clubs/motorsports/bspd/BSPD_MODEL_TOP.png" class="project-image" >
           </div>
         </span>
-        <span class="item-project-box">
+        <span class="item-project-box" data-project-type="student-teams">
           <div class="item-project-title">RoboDawg</div>
           <div class="item-project-image">
             <img src="../media/personal/robotic_arm/RoboArm.png" class="project-image" >
           </div>
         </span>
-        <span class="item-project-box">
+        <span class="item-project-box" data-project-type="personal-projects">
           <div class="item-project-title">Rotating Display</div>
           <div class="item-project-image">
             <img src="../media/personal/rotating_display/Full Assembly.png" class="project-image" >
@@ -70,8 +77,8 @@
     <!-- Footer -->
     <footer>
       <div class="div-footer">
-        <span class="footer-name">Greyson Ekstrom </span>
-        <span class="footer-degree">Electrical Engineering</span>
+        <div>Electrical & Electronics Engineering</div>
+        <div>Greyson Ekstrom </div>
       </div>
     </footer>
   </body>
