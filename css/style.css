@@ -226,7 +226,7 @@ iframe {
 .item-box iframe {
     display: block;
     width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
     border: 1px solid var(--secondary-color);
 }
 
