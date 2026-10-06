@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Greyson Ekstrom | BSPD</title>
+      <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="hero">
+        <h1 class="hero-title">Greyson Ekstrom</h1>
+        <h2 class="hero-subtitle">Brake System Plausibility Device</h2>
+    </header>
+    
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href='../https://www.linkedin.com/in/greysonekstrom/' target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <section class="section-grid"> 
+      <div class="section-project-image">
+        <img src="../../media/clubs/motorsports/bspd/BSPD_MODEL_TOP.png" class="project-image" >
+      </div>
+      <h3>Project Summary</h3>
+      <div class="section-grid-box">
+        <p>
+          The Brake System Plausibility Device (BSPD) is a critical component of a 
+          Formula SAE EV vehicle. It checks for simultaneous braking and acceleration 
+          inputs and safely shuts down the car as stated in competition rules. The BSPD 
+          reads from two separate inputs: the Brake System Encoder (BSE) and the Tractive 
+          System Current Sensor (TSCS). Using LM2903 dual input comparators, the BSPD 
+          determines if the sensor readings are within nominal range. When detected to 
+          be outside of nominal range, the BSPD passes a signal to the onboard LTC6994 
+          which disables the vehicle after 450ms.
+        </p>
+      </div>
+      <div class="section-project-image">
+        <img src="../../media/clubs/motorsports/bspd/BSPD_SCHEMATIC.png" class="project-image" >
+      </div>
+      <h3>BSE Logic</h3>
+      <div class="section-grid-box">
+        <p>
+          The Brake System Encoder (BSE) input into the BSE Logic section of the Brake 
+          System Plausibility Device (BSPD) has a maximum input range of up to 12V. A voltage 
+          input range between 500mV and 4.50V is considered within normal operating range. 
+          Outside of these ranges the input is considered to be either nonfunctional for a 
+          voltage < 500mV or in a state of hard breaking for a voltage > 4.50V. The determination 
+          of the braking status is done by measuring the input voltage across a comparator. If the 
+          input voltage falls outside the specified range, the car is determined to be hard braking 
+          and a signal is passed through the BSE logic.
+        </p> 
+      </div>
+      <div class="section-project-image">
+        <img src="../../media/clubs/motorsports/bspd/BSPD_FRONT_TRACES.png" class="project-image" >
+      </div>
+      <h3>TSCS Logic</h3>
+      <div class="section-grid-box">
+        <p>
+          The Tractive System Current (TSC) is measured from the car’s main battery pack utilizing 
+          an ICE-425 hall effect sensor to measure the current through the car. When a current of 
+          14.5A is detected within the tractive system, the TSCS logic section of the BSPD outputs 
+          a high signal. The signal from the current sensor outputs 2.568V at the trigger current and 
+          is determined to be short circuited when outputting a voltage < 500mV.
+        </p> 
+      </div>
+      <h3>BSPD Logic</h3>
+      <div class="section-grid-box">
+        <p>
+          Both the tractive system logic and the braking logic are passed through a logical OR gate to check 
+          whether the output signal is too low or too high from each logic block respectively. The logic of 
+          the two blocks are then checked by a logical AND gate to determine if the vehicle is simultaneously 
+          undergoing acceleration and hard braking.
+        </p> 
+      </div>
+      <div class="section-project-image">
+        <img src="../../media/clubs/motorsports/bspd/BSPD_MODEL_BOTTOM.png" class="project-image" >
+      </div>
+      <h3>Shutdown Relay</h3>
+      <div class="section-grid-box">
+        <p>
+          When both conditions are met, a signal is sent to an LTC6994 which only triggers after a calibrated 
+          450ms delay. A 12V relay is then triggered and cuts off a signal to the shutdown circuit, disabling 
+          the car. The BSPD relay may be reset by a dedicated button to enable the latch.
+        </p> 
+      </div>
+    </section>        
+    
+    <!-- Footer -->
+    <footer>
+      <div class="div-footer">
+        <div>Electrical & Electronics Engineering</div>
+        <div>Greyson Ekstrom </div>
+      </div>
+    </footer>
+  </body>
+</html>

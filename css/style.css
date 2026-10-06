@@ -194,6 +194,14 @@ iframe {
     overflow: hidden;
     background-color: #E5E7EB;
     border-radius: 0.5rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.item-project-box:focus-visible,
+.section-project-box:focus-visible {
+    outline: 3px solid var(--tertiary-color);
+    outline-offset: 3px;
 }
 
 .item-project-title,
