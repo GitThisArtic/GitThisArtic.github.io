@@ -238,6 +238,12 @@ iframe {
     border: 1px solid var(--secondary-color);
 }
 
+.resume-frame {
+    height: 80vh;
+    height: 80svh;
+    min-height: 32rem;
+}
+
 /* ----- Footer ----- */
 footer {
     margin-top: auto;
