@@ -244,6 +244,17 @@ iframe {
     min-height: 32rem;
 }
 
+.item-details .item-body
+.textbox-small {
+    width: 15em;
+}
+
+.item-details .item-body
+.textbox-large {
+    width: 30em;
+    height: 10em;
+}
+
 /* ----- Footer ----- */
 footer {
     margin-top: auto;
