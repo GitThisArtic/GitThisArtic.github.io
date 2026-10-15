@@ -25,12 +25,12 @@
       </ul>
     </nav>
 
-    <section class="section-grid"> 
-      <div class="section-project-image">
+    <section class="item-details"> 
+      <div class="item-project-image">
         <img src="../../media/clubs/motorsports/bspd/BSPD_MODEL_TOP.png" class="project-image" >
       </div>
       <h3>Project Summary</h3>
-      <div class="section-grid-box">
+      <div class="item-body">
         <p>
           The Brake System Plausibility Device (BSPD) is a critical component of a 
           Formula SAE EV vehicle. It checks for simultaneous braking and acceleration 
@@ -42,11 +42,11 @@
           which disables the vehicle after 450ms.
         </p>
       </div>
-      <div class="section-project-image">
+      <div class="item-project-image">
         <img src="../../media/clubs/motorsports/bspd/BSPD_SCHEMATIC.png" class="project-image" >
       </div>
       <h3>BSE Logic</h3>
-      <div class="section-grid-box">
+      <div class="item-body">
         <p>
           The Brake System Encoder (BSE) input into the BSE Logic section of the Brake 
           System Plausibility Device (BSPD) has a maximum input range of up to 12V. A voltage 
@@ -58,11 +58,11 @@
           and a signal is passed through the BSE logic.
         </p> 
       </div>
-      <div class="section-project-image">
+      <div class="item-project-image">
         <img src="../../media/clubs/motorsports/bspd/BSPD_FRONT_TRACES.png" class="project-image" >
       </div>
       <h3>TSCS Logic</h3>
-      <div class="section-grid-box">
+      <div class="item-body">
         <p>
           The Tractive System Current Sensor(TSCS) measures the car’s main battery pack utilizing 
           an ICE-425 hall effect sensor to obtain the current flwoing through the tractive system. 
@@ -72,7 +72,7 @@
         </p> 
       </div>
       <h3>BSPD Logic</h3>
-      <div class="section-grid-box">
+      <div class="item-body">
         <p>
           Both the tractive system logic and the braking logic are passed through a logical OR gate to check 
           whether the output signal is too low or too high from each logic block respectively. The logic of 
@@ -80,11 +80,11 @@
           undergoing acceleration and hard braking.
         </p> 
       </div>
-      <div class="section-project-image">
+      <div class="item-project-image">
         <img src="../../media/clubs/motorsports/bspd/BSPD_MODEL_BOTTOM.png" class="project-image" >
       </div>
       <h3>Shutdown Relay</h3>
-      <div class="section-grid-box">
+      <div class="item-body">
         <p>
           When both conditions are met, a signal is sent to an LTC6994 which only triggers after a calibrated 
           450ms delay. A 12V relay is then triggered and cuts off a signal to the shutdown circuit, disabling 

@@ -46,18 +46,17 @@ iframe {
     text-align: center;
 }
 
-.hero-title,
-.hero-name {
+.hero-title {
     margin: 0;
     font-size: clamp(2.25rem, 7vw, 5rem);
-    line-height: 1.1;
+    font-weight: 650;
 }
 
-.hero-subtitle,
-.hero-subname {
+
+.hero-subtitle {
     margin: 0;
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
-    font-weight: 400;
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
+    font-weight: 650;
 }
 
 /* ----- Navigation Section ----- */
@@ -100,7 +99,6 @@ iframe {
 }
 
 /* ----- Shared page content ----- */
-.section-grid,
 .item-details {
     display: grid;
     align-content: start;
@@ -111,27 +109,23 @@ iframe {
     padding: clamp(1.5rem, 5vw, 3rem) var(--page-gutter);
 }
 
-.section-grid h3,
-.item-title {
+.item-details h3 {
     margin: 0;
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     line-height: 1.2;
     text-align: center;
 }
 
-.section-grid-box,
 .item-body {
     width: min(100%, 50rem);
     line-height: 1.7;
 }
 
-.section-grid-box p,
 .item-body p {
     margin: 0 0 1rem;
 }
 
-.item-project,
-.section-project {
+.item-project {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
     align-items: stretch;
@@ -183,8 +177,7 @@ iframe {
     display: none;
 }
 
-.item-project-box,
-.section-project-box {
+.item-project-box {
     display: grid;
     grid-template-rows: auto 1fr;
     align-content: start;
@@ -198,28 +191,24 @@ iframe {
     text-decoration: none;
 }
 
-.item-project-box:focus-visible,
-.section-project-box:focus-visible {
+.item-project-box:focus-visible {
     outline: 3px solid var(--tertiary-color);
     outline-offset: 3px;
 }
 
-.item-project-title,
-.section-project-title {
+.item-project-title {
     color: var(--ink-black);
     font-size: 1rem;
     font-weight: 700;
 }
 
-.item-project-image,
-.section-project-image {
+.item-project-image {
     display: grid;
     place-items: center;
     min-height: 10rem;
 }
 
-.item-project-image img,
-.section-project-image img {
+.item-project-image img {
     display: block;
     width: 100%;
     max-height: 20rem;
@@ -230,7 +219,6 @@ iframe {
     width: 100%;
 }
 
-.item-details iframe,
 .item-box iframe {
     display: block;
     width: 100%;
@@ -251,8 +239,13 @@ iframe {
 
 .item-details .item-body
 .textbox-large {
-    width: 30em;
-    height: 10em;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-content: start;
+    gap: 0.75rem;
+    min-width: 0;
+    padding: 1rem;
+    overflow: hidden;
 }
 
 /* ----- Footer ----- */
