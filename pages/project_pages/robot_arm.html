@@ -21,7 +21,7 @@
             <li><a href="../resume.html">Resume</a></li>
             <li><a href="../projects.html">Projects</a></li>
             <li><a href="../contact.html">Contact</a></li>
-            <li><a href='../https://www.linkedin.com/in/greysonekstrom/' target="_blank">LinkedIn</a></li>
+            <li><a href='https://www.linkedin.com/in/greysonekstrom/' target="_blank">LinkedIn</a></li>
           </ul>
         </nav>
 
@@ -59,14 +59,10 @@
             <h3>Motor Control</h3>
             <div class="item-body">
                 <p>
-                    The Brake System Encoder (BSE) input into the BSE Logic section of the Brake 
-                    System Plausibility Device (BSPD) has a maximum input range of up to 12V. A voltage 
-                    input range between 500mV and 4.50V is considered within normal operating range. 
-                    Outside of these ranges the input is considered to be either nonfunctional for a 
-                    voltage < 500mV or in a state of hard breaking for a voltage > 4.50V. The determination 
-                    of the braking status is done by measuring the input voltage across a comparator. If the 
-                    input voltage falls outside the specified range, the car is determined to be hard braking 
-                    and a signal is passed through the BSE logic.
+                    The motors are controlled by the onboard Arduino Uno which receives commands 
+                    over usb serial from the raspberry pi for calculated arm movements based on 
+                    the current known position of the arm and the position of the targeted camera 
+                    object.
                 </p> 
             </div>
             <h3>Vision Processing</h3>
