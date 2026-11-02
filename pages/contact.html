@@ -25,34 +25,49 @@
       </ul>
     </nav>
 
-    <!-- Contact Information -->
     <section class="item-details">
-      <h3>Contact info</h3>
-      <div class="item-project">
-        <!--
-        <a class="item-body">
-          <div for="name">Name</div>
-          <input class="textbox-small" type="text" id="name" name="name">
-          <div for="email">Email</div>
-          <input class="textbox-small" type="text" id="email" name="email">
-          <div for="content">Message</div>
-          <input class="textbox-large" type="text" id="content" name="content">
-          <button href="../media/Greyson Ekstrom Resume.pdf" download>Send</button>
-        </a>
-      -->
-        <a class="item-body">
+      <h3>Get in touch</h3>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h4>Contact info</h4>
           <p>Email: greyson.ekstrom@gmail.com</p>
           <p>Phone: +1 (478) 294 0037</p>
-        </a>
+        </div>
+        <!--
+        <form class="contact-form" id="contact-form">
+          <div class="contact-field">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="contact-field">
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" type="text" required>
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="7" required></textarea>
+          </div>
+          <button class="contact-submit" type="submit">Open email app</button>
+          <p class="contact-note">Your default email app will open with your message ready to send.</p>
+        </form>
+        -->
       </div>
     </section>
 
-      <!-- Footer -->
     <footer>
-      <div class="div-footer">
+      <div class="upper-footer">
+        <a href="https://www.linkedin.com/in/greysonekstrom/" target="_blank">
+          <img src="../media/LI-In-Bug.png">
+        </a>
+        <a href="https://github.com/GitThisArtic">
+          <img src="../media/GitHub_Invertocat_Black_Clearspace.png">
+        </a>
+      </div>
+      <div class="lower-footer">
         <div>Electrical & Electronics Engineering</div>
         <div>Greyson Ekstrom </div>
       </div>
     </footer>
+    <script src="../js/contact-form.js" defer></script>
   </body>
 </html>
